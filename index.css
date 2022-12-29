@@ -1,0 +1,22 @@
+body{
+    transition: 1s;
+    background-color: #1F2937;
+}
+
+.header{
+    border: 3px solid red;
+    display: inherit;
+    text-align: right;
+}
+
+.lightBulb{
+    font-size: 32px;
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+}
+
+.title{
+    
+}
+
