@@ -5,6 +5,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "<",">",".","?",
 "/"];
 
+
 const mode =()=>{
     var element = document.body
     var bulbEl=document.getElementById('bulb-el')
@@ -15,10 +16,24 @@ const mode =()=>{
 }
 
 
-const passWord =()=>{
+const passWord =(passwordOne, passwordTwo)=>{
     var passOne=document.getElementById("passOne")
     var passTwo=document.getElementById("passTwo")
-    passOne.innerText = "asdasd"
-    passTwo.innerText = "qwezxc"
+    passOne.innerText = passwordOne
+    passTwo.innerText = passwordTwo
+    
+}
 
+const randPas =()=>{
+    let passOne = ""
+    let passTwo = ""
+    for(let i=0; i<10; i++){
+        passOne+= characters[Math.floor(Math.random()*characters.length)]
+        passTwo+= characters[Math.floor(Math.random()*characters.length)]
+    }
+    passWord(passOne, passTwo)
+}
+
+const startRand=()=>{
+    randPas()    
 }
