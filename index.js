@@ -34,6 +34,19 @@ const randPas =()=>{
     passWord(passOne, passTwo)
 }
 
+const passwordOne =()=>{
+    let passOne = document.getElementById("passOne")
+    //alert("Copied Password: " + passOne.textContent)
+    navigator.clipboard.writeText(passOne.textContent)
+}
+
+
+const passwordTwo =()=>{
+    let passTwo = document.getElementById("passTwo")
+    //alert("Copied Password: " + passTwo.textContent)
+    navigator.clipboard.writeText(passTwo.textContent)
+}
+
 const startRand=()=>{
     randPas()    
 }
