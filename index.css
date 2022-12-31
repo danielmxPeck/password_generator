@@ -1,24 +1,35 @@
 body{
     transition: 1s;
     background-color: #1F2937;
+    font-family: 'Inter';
 }
 
+.lightMode{
+    background-color:#ECFDF5;
+    transition: 1s;
+}
+
+
 .header{
-    border: 3px solid red;
+    //border: 3px solid red;
     display: inherit;
     text-align: right;
     margin-bottom: 5%;
 }
 
-.lightBulb{
+.dmBulb{
     font-size: 32px;
     background-color: unset;
     border: unset;
     cursor: pointer;
+    color:white
+}
+
+.lmBulb{
+    color: #1F2937;
 }
 
 .title{
-    border: 3px solid orange;
     padding-left: 20%;
     line-height: 80%;
     margin-bottom: 5%;
@@ -40,4 +51,34 @@ body{
 .line{
     border-top: 2px solid #2F3E53;
     margin-top:3%;
+}
+
+.boxContainer{
+    padding-left: 20%;
+    
+}   
+
+.box{
+    margin-top:2%;
+    margin-right: 2%;
+    border: 4px solid #273549;
+    background-color: #273549;
+    border-radius: 4px;
+    width: 13rem;
+    height: 2rem;
+    float:left;
+    display: inherit;
+    position: relative;
+    text-align: center;
+    color: #55F991;;
+    font-size: 24px;
+    
+}
+
+.dmfirstLine{
+    color:white;
+}
+
+.lmfirstLine{
+    color: black;
 }

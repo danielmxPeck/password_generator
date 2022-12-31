@@ -5,3 +5,20 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "<",">",".","?",
 "/"];
 
+const mode =()=>{
+    var element = document.body
+    var bulbEl=document.getElementById('bulb-el')
+    var firstLineEl=document.getElementById("firstLine-el")
+    element.classList.toggle("lightMode")
+    bulbEl.classList.toggle("lmBulb")
+    firstLineEl.classList.toggle("lmfirstLine")
+}
+
+
+const passWord =()=>{
+    var passOne=document.getElementById("passOne")
+    var passTwo=document.getElementById("passTwo")
+    passOne.innerText = "asdasd"
+    passTwo.innerText = "qwezxc"
+
+}

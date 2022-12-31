@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="header">
-        <button class="lightBulb" >
-            <i class="fa-regular fa-lightbulb"></i>
+        <button class="dmBulb" onclick="mode()" >
+            <i id="bulb-el" class="fa-regular fa-lightbulb"></i>
         </button>
     </div>
     <div class="title">
-        <h1 style="font-size:38px">Generate a</h1>
-        <h1 style="font-size:36px">random password</h1>
-        <p style="font-size:30px">Never use an insercure password again</p>
+        <h1 id="firstLine-el" class="dmfirstLine"  style="font-size:38px;">Generate a</h1>
+        <h1 style="font-size:36px; color:#4ADF86">random password</h1>
+        <p style="font-size:30px; color: #6B7280;">Never use an insercure password again</p>
     </div>
-    <button class="passBut">
+    <button class="passBut" onclick="passWord()">
         Generate passwords
     </button>
     <div class="line"></div>
-    <div>
-        <div>box</div>
-        <div>box </div>
+    <div class="boxContainer">
+        <div id="passOne"a class="box">box</div>
+        <div id="passTwo"class="box">box </div>
     </div>
 </body>
     <script src="index.js"></script>
