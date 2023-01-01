@@ -36,15 +36,23 @@ const randPas =()=>{
 
 const passwordOne =()=>{
     let passOne = document.getElementById("passOne")
-    //alert("Copied Password: " + passOne.textContent)
     navigator.clipboard.writeText(passOne.textContent)
+    .then(()=>
+        alert("Copied Password: " + passOne.textContent),
+    ()=>{
+        alert("Unable to copy Password")
+    })
 }
 
 
 const passwordTwo =()=>{
     let passTwo = document.getElementById("passTwo")
-    //alert("Copied Password: " + passTwo.textContent)
     navigator.clipboard.writeText(passTwo.textContent)
+    .then(()=>
+        alert("Copied Password: " + passTwo.textContent),
+    ()=>{
+        alert("Unable to copy Password")
+    })
 }
 
 const startRand=()=>{

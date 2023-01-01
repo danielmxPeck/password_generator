@@ -17,13 +17,22 @@ body{
     margin-bottom: 5%;
 }
 
-.dmBulb{
+/* .dmBulb{
+    font-size: 32px;
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+    color:white
+} */
+
+.fa-lightbulb{
     font-size: 32px;
     background-color: unset;
     border: unset;
     cursor: pointer;
     color:white
 }
+
 
 .lmBulb{
     color: #1F2937;
@@ -78,6 +87,14 @@ body{
 .dmfirstLine{
     color:white;
 }
+
+.thirdLine{
+    font-size:28px;
+    color: #6B7280;
+    line-height: normal;
+
+}
+
 
 .lmfirstLine{
     color: black;
